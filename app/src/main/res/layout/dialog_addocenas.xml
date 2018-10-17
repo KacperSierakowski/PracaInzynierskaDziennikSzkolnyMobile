@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/DialogMobileVisiontextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Dodaj ocenę"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/DialogMobileVisionEditTextWartoscOceny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Wartość oceny"
+        android:inputType="number"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/DialogMobileVisionEditTextIDprzedmiotu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID przedmiotu"
+        android:inputType="number"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/DialogMobileVisionEditTextIDucznia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID ucznia"
+        android:inputType="number"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:id="@+id/buttonAddOcenasDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@android:color/holo_green_light"
+        android:text="Dodaj"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DialogMobileVisionResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Response..." />
+
+</LinearLayout>

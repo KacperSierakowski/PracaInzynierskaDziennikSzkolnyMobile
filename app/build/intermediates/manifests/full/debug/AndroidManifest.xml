@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.gms.samples.vision.ocrreader"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="27" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="OcrReaderApp"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.main_activity"
+            android:label="Dziennik Szkolny" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity"
+            android:label="Read Text" >
+        </activity>
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.AddOcenasActivity"
+            android:label="Dodaj ocenę" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.AddKlasasActivity"
+            android:label="Dodaj klasę" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.AddUczensActivity"
+            android:label="Dodaj ucznia" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.AddNauczycielsActivity"
+            android:label="Dodaj nauczyciela" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.AddPrzedmiotsActivity"
+            android:label="Dodaj nauczyciela" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.AddNieobecnoscsActivity"
+            android:label="Dodaj nauczyciela" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>
